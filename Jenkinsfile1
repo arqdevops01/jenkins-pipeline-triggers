@@ -1,6 +1,7 @@
 pipeline {
     agent any
     options {
+        //Numero máximo de build guardados >>2
         buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '2')
         
     }
